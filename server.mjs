@@ -5,33 +5,24 @@ import express from 'express'
 
 installGlobals()
 
-let vite =
-  process.env.NODE_ENV === 'production'
-    ? undefined
-    : await unstable_createViteServer()
+let vite = process.env.NODE_ENV === 'production' ? undefined : await unstable_createViteServer()
 
 const app = express()
 
-// handle asset requests
+// handle asset requests - 1
 if (vite) {
   app.use(vite.middlewares)
 } else {
-  app.use(
-    '/build',
-    express.static('public/build', { immutable: true, maxAge: '1y' }),
-  )
+  app.use('/build', express.static('public/build', { immutable: true, maxAge: '1y' }))
 }
+
+// handle asset requests - 2
 app.use(express.static('public', { maxAge: '1h' }))
 
 // handle SSR requests
-app.all(
-  '*',
-  createRequestHandler({
-    build: vite
-      ? () => unstable_loadViteServerBuild(vite)
-      : await import('./build/index.js'),
-  }),
-)
+app.all('*', createRequestHandler({
+  build: vite ? () => unstable_loadViteServerBuild(vite) : await import('./build/index.js'),
+}))
 
-const port = 3000
+const port = process.env.PORT || 3000
 app.listen(port, () => console.log('http://localhost:' + port))
