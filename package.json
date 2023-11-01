@@ -1,13 +1,12 @@
 {
-  "name": "brand-new-vite-remix-express",
   "private": true,
   "sideEffects": false,
   "type": "module",
+  "packageManager": "yarn@3.6.4",
   "scripts": {
-    "build": "vite build && vite build --ssr",
     "dev": "node ./server.mjs",
-    "start": "cross-env NODE_ENV=production node ./server.mjs",
-    "typecheck": "tsc"
+    "build": "vite build && vite build --ssr",
+    "start": "cross-env NODE_ENV=production node ./server.mjs"
   },
   "dependencies": {
     "@remix-run/css-bundle": "^2.2.0",
