@@ -2,7 +2,7 @@
   "private": true,
   "sideEffects": false,
   "type": "module",
-  "packageManager": "yarn@3.6.4",
+  "packageManager": "yarn@4.0.1",
   "scripts": {
     "dev": "node ./server.mjs",
     "build": "vite build && vite build --ssr",
