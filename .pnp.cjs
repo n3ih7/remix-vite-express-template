@@ -35,12 +35,14 @@ const RAW_RUNTIME_STATE =
           ["@types/express", "npm:4.17.20"],\
           ["@types/react", "npm:18.2.33"],\
           ["@types/react-dom", "npm:18.2.14"],\
+          ["@types/react-refresh", "npm:0.14.3"],\
           ["cross-env", "npm:7.0.3"],\
           ["eslint", "npm:8.52.0"],\
           ["express", "npm:4.18.2"],\
           ["isbot", "npm:3.7.0"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:18.2.0"],\
+          ["react-refresh", "npm:0.14.0"],\
           ["typescript", "patch:typescript@npm%3A5.2.2#optional!builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
           ["vite", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:4.5.0"],\
           ["vite-tsconfig-paths", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:4.2.1"]\
@@ -1802,6 +1804,51 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@types/babel__core", [\
+      ["npm:7.20.3", {\
+        "packageLocation": "../../.yarn/berry/cache/@types-babel__core-npm-7.20.3-12e735c935-10c0.zip/node_modules/@types/babel__core/",\
+        "packageDependencies": [\
+          ["@types/babel__core", "npm:7.20.3"],\
+          ["@babel/parser", "npm:7.23.0"],\
+          ["@babel/types", "npm:7.23.0"],\
+          ["@types/babel__generator", "npm:7.6.6"],\
+          ["@types/babel__template", "npm:7.4.3"],\
+          ["@types/babel__traverse", "npm:7.20.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/babel__generator", [\
+      ["npm:7.6.6", {\
+        "packageLocation": "../../.yarn/berry/cache/@types-babel__generator-npm-7.6.6-1936b54ed1-10c0.zip/node_modules/@types/babel__generator/",\
+        "packageDependencies": [\
+          ["@types/babel__generator", "npm:7.6.6"],\
+          ["@babel/types", "npm:7.23.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/babel__template", [\
+      ["npm:7.4.3", {\
+        "packageLocation": "../../.yarn/berry/cache/@types-babel__template-npm-7.4.3-ce042d883b-10c0.zip/node_modules/@types/babel__template/",\
+        "packageDependencies": [\
+          ["@types/babel__template", "npm:7.4.3"],\
+          ["@babel/parser", "npm:7.23.0"],\
+          ["@babel/types", "npm:7.23.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/babel__traverse", [\
+      ["npm:7.20.3", {\
+        "packageLocation": "../../.yarn/berry/cache/@types-babel__traverse-npm-7.20.3-dd6e4351ef-10c0.zip/node_modules/@types/babel__traverse/",\
+        "packageDependencies": [\
+          ["@types/babel__traverse", "npm:7.20.3"],\
+          ["@babel/types", "npm:7.23.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@types/body-parser", [\
       ["npm:1.19.4", {\
         "packageLocation": "../../.yarn/berry/cache/@types-body-parser-npm-1.19.4-1ba5b1f062-10c0.zip/node_modules/@types/body-parser/",\
@@ -2023,6 +2070,17 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/react-dom", "npm:18.2.14"],\
           ["@types/react", "npm:18.2.33"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/react-refresh", [\
+      ["npm:0.14.3", {\
+        "packageLocation": "../../.yarn/berry/cache/@types-react-refresh-npm-0.14.3-d201a15407-10c0.zip/node_modules/@types/react-refresh/",\
+        "packageDependencies": [\
+          ["@types/react-refresh", "npm:0.14.3"],\
+          ["@types/babel__core", "npm:7.20.3"],\
+          ["csstype", "npm:3.1.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8509,12 +8567,14 @@ const RAW_RUNTIME_STATE =
           ["@types/express", "npm:4.17.20"],\
           ["@types/react", "npm:18.2.33"],\
           ["@types/react-dom", "npm:18.2.14"],\
+          ["@types/react-refresh", "npm:0.14.3"],\
           ["cross-env", "npm:7.0.3"],\
           ["eslint", "npm:8.52.0"],\
           ["express", "npm:4.18.2"],\
           ["isbot", "npm:3.7.0"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:18.2.0"],\
+          ["react-refresh", "npm:0.14.0"],\
           ["typescript", "patch:typescript@npm%3A5.2.2#optional!builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
           ["vite", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:4.5.0"],\
           ["vite-tsconfig-paths", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:4.2.1"]\
