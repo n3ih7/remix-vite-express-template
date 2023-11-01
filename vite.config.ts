@@ -12,4 +12,7 @@ export default defineConfig({
     }),
     tsconfigPaths(),
   ],
+  build: {
+    copyPublicDir: false,
+  },
 })
