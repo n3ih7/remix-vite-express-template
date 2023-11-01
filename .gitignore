@@ -5,9 +5,10 @@ node_modules
 /public/build
 .env
 
+# misc
 .idea
 
-# Yarn Modern Zero-Installs
+# Yarn Modern Zero-Installs Solution
 .yarn/*
 !.yarn/cache
 !.yarn/patches

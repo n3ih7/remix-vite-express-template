@@ -1,6 +1,11 @@
-import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
+import './tailwind.css'
+import '@mantine/core/styles.css'
 
-export default function App() {
+import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
+import { ColorSchemeScript, MantineProvider } from '@mantine/core'
+
+const Root = () => {
+
   return (
     <html lang="en">
     <head>
@@ -8,13 +13,18 @@ export default function App() {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <Meta />
       <Links />
+      <ColorSchemeScript forceColorScheme="dark" />
     </head>
     <body>
-    <Outlet />
-    <ScrollRestoration />
-    <LiveReload />
-    <Scripts />
+    <MantineProvider forceColorScheme="dark">
+      <Outlet />
+      <ScrollRestoration />
+      <LiveReload />
+      <Scripts />
+    </MantineProvider>
     </body>
     </html>
   )
 }
+
+export default Root

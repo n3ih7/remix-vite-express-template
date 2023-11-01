@@ -7,7 +7,8 @@ export const meta: MetaFunction = () => {
   ]
 }
 
-export default function Index() {
+const Index = () => {
+
   return (
     <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.8' }}>
       <h1>Welcome to Remix</h1>
@@ -36,6 +37,9 @@ export default function Index() {
           </a>
         </li>
       </ul>
+      <div className="text-red-500 font-bold">text-red-500 font-bold</div>
     </div>
   )
 }
+
+export default Index
